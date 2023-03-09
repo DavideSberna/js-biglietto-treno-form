@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <section>
+            <div>
+                <h1 class="text-center c-white">Calcola il prezzo del tuo biglietto</h1>
+            </div>
+        </section>
+    </header>
+
+    <main>
+        <section id="input-data">
+            <div class="card b-radius bg-white">
+                <div class="d-flex j-between">
+                    <div>
+                        <p>Nome Cognome</p>
+                        <input type="text" value="" name="nome">
+                    </div>
+                    <div>
+                        <p>Km da percorrere</p>
+                        <input type="number" value="" name="km">
+                    </div>
+                    <div>
+                        <p>Fascia d'età</p>
+                        <select name="eta">
+                            <option value="1">Maggiorenne</option>
+                            <option value="2">Minorenne</option>
+                        </select>
+                    </div>
+                </div>
+                <div>
+                    <div>
+                        <button name="btnCreate">Genera</button>
+                        <button name="btnDelete">Annulla</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="output-data">
+            <div>
+                <h1 class="text-center c-white">Il tuo biglietto</h1>
+            </div>
+            <div class="card b-radius bg-white">
+                <div>
+                    <div>
+                        <h3>Dettaglio passeggeri</h3>
+                    </div>
+                    <div>
+                        <table>
+                            <tr>
+                              <th class="text-left">Nome passeggero</th>
+                              <th class="text-left">Offerta</th>
+                              <th class="text-left">Carrozza</th>
+                              <th class="text-left">Codice CP</th>
+                              <th class="text-left">Costo biglietto</th>
+                            </tr>
+                            <tr>
+                              <td>output</td>
+                              <td>output</td>
+                              <td>output</td>
+                              <td>output</td>
+                              <td>output</td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+
+
+
+
+
+
+
+    <script src="./js/index.js"></script>
+</body>
+</html>

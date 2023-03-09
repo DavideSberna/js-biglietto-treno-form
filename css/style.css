@@ -1,0 +1,53 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+
+body{
+    background-color: palevioletred;
+}
+.d-flex{
+    display: flex;
+}
+.j-between{
+    justify-content: space-between;
+}
+
+
+table{
+    width: 100%;
+    margin: 0 auto;
+}
+
+
+.card{
+    width: 80%;
+    margin: 0 auto;
+    padding: 30px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.b-radius{
+    border-radius: 10px;
+}
+
+
+.c-white{
+    color: white;
+}
+.bg-white{
+    background-color: white;
+}
+
+.text-center{
+    text-align: center;
+}
+.text-left{
+    text-align:left;
+}
+
+
+

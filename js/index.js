@@ -37,25 +37,42 @@ btnCreate.addEventListener("click", function() {
     outputCap.innerHTML = cap;
     
 
-    if(age.value == "1"){
-        outputOffer.innerText = "Promo40%";
-        priceTotale = priceTotale * sc40;
-        outputPrice.innerHTML = priceTotale;
+    if(isNaN(parseInt(inputName.value)) && !isNaN(parseInt(inputKm.value)) && age.value > 0){
+        
+        if(age.value == "1"){
+            outputOffer.innerText = "Promo40%";
+            offer = priceTotale * sc40;
+            outputPrice.innerHTML = offer;
+
+        } else {
+            outputOffer.innerText = "Promo20%"
+            offer = priceTotale * sc20;
+            outputPrice.innerHTML = offer;
+        }
 
     } else {
-        outputOffer.innerText = "Promo20%"
-        priceTotale = priceTotale * sc20;
-        outputPrice.innerHTML = priceTotale;
+        alert("inserici dati correttamente")
+        outputName.innerHTML = "--";
+        outputCarr.innerHTML = "--";
+        outputCap.innerHTML = "--";
+        outputPrice.innerHTML = "--";
+        outputOffer.innerText = "--";
+        age.value = 0
+
     }
+
+    
 })
 
 
 btnDelete.addEventListener("click", function() {
-    outputName.innerHTML = "";
-    outputCarr.innerHTML = "";
-    outputCap.innerHTML = "";
-    outputPrice.innerHTML = "";
-    outputOffer.innerText = "";
+    outputName.innerHTML = "--";
+    outputCarr.innerHTML = "--";
+    outputCap.innerHTML = "--";
+    outputPrice.innerHTML = "--";
+    outputOffer.innerText = "--";
+    age.value = 0
+    
 })
 
 

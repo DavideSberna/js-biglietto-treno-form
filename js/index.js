@@ -22,7 +22,7 @@ let outputPrice = document.querySelector("table tr td:nth-child(5)");
 // variables
 let sc20 = 0.8;
 let sc40 = 0.6;
-let priceKm = 0.21
+let priceKm = 0.21;
 let priceTotale = inputKm.value * priceKm;
 let offer = "";
 let carrozza = Math.floor(Math.random() * (8 - 1) + 1);
@@ -41,13 +41,21 @@ btnCreate.addEventListener("click", function() {
         
         if(age.value == "1"){
             outputOffer.innerText = "Promo40%";
+            offer = priceTotale * sc20;
+            outputPrice.innerHTML = parseFloat(offer).toFixed(2);
+            console.log(offer)
+            console.log(priceTotale)
+            console.log(outputPrice.innerHTML)
+            
+
+        } else if(age.value == "3"){
+            outputOffer.innerText = "Promo20%"
             offer = priceTotale * sc40;
-            outputPrice.innerHTML = offer;
+            outputPrice.innerHTML = parseFloat(offer).toFixed(2);
 
         } else {
-            outputOffer.innerText = "Promo20%"
-            offer = priceTotale * sc20;
-            outputPrice.innerHTML = offer;
+            outputOffer.innerText = "nessuna promo"
+            outputPrice.innerHTML = parseFloat(priceTotale).toFixed(2);;
         }
 
     } else {
@@ -57,7 +65,6 @@ btnCreate.addEventListener("click", function() {
         outputCap.innerHTML = "--";
         outputPrice.innerHTML = "--";
         outputOffer.innerText = "--";
-        age.value = 0
 
     }
 
